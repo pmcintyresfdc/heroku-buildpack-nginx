@@ -3,7 +3,7 @@
 # fail fast
 set -eu
 
-apt-get install libssl -y
+apt-cache search libssl -y
 
 # parse args
 BP_DIR="$(cd "$(dirname "$0")" && pwd)"
