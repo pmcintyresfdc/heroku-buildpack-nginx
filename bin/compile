@@ -3,6 +3,8 @@
 # fail fast
 set -eu
 
+apt-get install libssl1.0.0 -y
+
 # parse args
 BP_DIR="$(cd "$(dirname "$0")" && pwd)"
 BUILD_DIR=$1
